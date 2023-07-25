@@ -2,7 +2,7 @@
 
 ## Live URL
 
-[Weather Dashboard Live](https://your-live-url-here)
+[Weather Dashboard Live](https://hyperlitz.github.io/weatherforecast)
 
 ## Live Repository
 
