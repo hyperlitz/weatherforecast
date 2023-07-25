@@ -1,0 +1,204 @@
+ /* CSS styles for the Weather Dashboard */
+
+/* Global Styles */
+  body {
+    background-image: url("https://cdn.wallpapersafari.com/50/0/hErSp5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family:'Playfair Display', serif;;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    position: relative;
+    /* Apply slight blur to the background image */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Main Styles */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  #current-weather {
+    padding: 20px;
+    height: 240px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    background-color: #d63b3bcf;
+    border-radius: 2rem;
+    margin: 30px 0 0 30px;
+    display: none;
+  }
+  #current-weather p{
+    margin-bottom: 2px;
+  }
+  
+  #forecast {
+    margin-top: 7rem;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: 12px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin: 12px;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: 12px;
+  }
+  
+  .forecast-item {
+    width: calc(20% - 20px);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid  blue;
+    background-color: #4caf4fc8;
+    border-radius: 2rem;
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  #default-cities {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #default-cities button {
+    display: block;
+    padding: 2.4px 0;
+    border-radius: 4px;
+    width: 220px; /* Reduced button width */
+    margin: 10px auto; /* Updated to center the buttons horizontally with reduced margin */
+  }
+  
+  /* ... (other CSS rules) ... */
+  
+  #default-cities {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .city-button {
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    background-color: #4c7faf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .city-button:hover {
+    background: linear-gradient(to right, skyblue,blue, darkblue);
+    transform: scale(1.05); /* Slight scale up on hover */
+  }
+
+  .recent-search-button {
+    display: block;
+    width: 250px;
+    margin: 5px auto;
+    background-color: #4c7faf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .recent-search-button:hover {
+    background: linear-gradient(to right, skyblue, blue, darkblue);
+    transform: scale(1.05);
+  }
+
+  #recent-searches{
+    border: 3px solid skyblue;
+    border-radius: 8px;
+  }
+
+  #WD{
+    font-size: 50px;
+  }
